@@ -87,7 +87,8 @@ fun MandelbrotPlot(requester: FocusRequester, model: MandelbrotViewerModel) {
 @Composable
 fun MandelbrotControls(requester: FocusRequester, model: MandelbrotViewerModel) {
     Surface(
-        shape = RoundedCornerShape(4.dp), color = Color.White.copy(alpha = 1.0f),
+        shape = RoundedCornerShape(4.dp),
+        color = Color.White.copy(alpha = 1.0f),
         modifier = Modifier
             .fillMaxWidth()
     ) {
