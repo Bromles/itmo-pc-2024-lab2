@@ -68,6 +68,7 @@ class MandelbrotMap(
                         buffer[y * options.xRes + x] = mandelbrot(cx0, cy0, options.limit)
                     }
                 }
+
                 if (parallel) launch { block() }
                 else block()
             }

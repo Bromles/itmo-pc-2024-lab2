@@ -24,7 +24,7 @@ class MandelbrotViewerModel(scope: CoroutineScope, dispatcher: CoroutineDispatch
 
     private val limits = MutableStateFlow(512)
     private val parallel = MutableStateFlow(true)
-    private val colorMaps = MutableStateFlow(ColorMap.Plasma)
+    private val colorMaps = MutableStateFlow(ColorMap.DEFAULT_COLOR_MAP)
     private val mandelbrots = MutableStateFlow(MandelbrotMap.UNIT)
 
     private val options = combine(viewPorts, limits) { viewPort: Viewport, limit: Int ->

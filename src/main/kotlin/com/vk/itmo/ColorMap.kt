@@ -20,7 +20,7 @@ class ColorMap(private val steps: List<Pair<Float, Color>>) {
     }
 
     companion object {
-        val Plasma = ColorMap(
+        val DEFAULT_COLOR_MAP = ColorMap(
             0.00f to Color(13, 8, 135),
             0.14f to Color(84, 2, 163),
             0.29f to Color(139, 10, 165),
