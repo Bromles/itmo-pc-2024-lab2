@@ -19,6 +19,12 @@ dependencies {
     implementation(compose.desktop.currentOs)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${project.properties["coroutines.version"]}")
     implementation("org.jetbrains.skiko:skiko:${project.properties["skiko.version"]}")
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:${project.properties["coroutines.version"]}")
+    testImplementation(kotlin("test"))
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
 
 compose.desktop {
